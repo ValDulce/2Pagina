@@ -2,9 +2,32 @@
 
 
 body{
-    background-color: #252954;
+    background-color:  #fff; 
 }
 
+
+.menu {
+	display: flex;
+	gap: 2rem;
+}
+
+.menu li {
+	list-style: none;
+}
+
+.menu a {
+	text-decoration: none;
+	font-size: 1.3rem;
+	color: var(--dark-color);
+	font-weight: 600;
+	text-transform: uppercase;
+	position: relative;
+}
+
+h1 {
+    text-align: center;
+  }
+  
 .main .footer{
     margin: 50px 0;
     display: flex;
@@ -22,7 +45,7 @@ body{
     font-weight: 500;
     font-size: 30px;
     line-height: 40px;
-    color: #fff;
+    color: #000;
 }
 
 .main .footer .footer-links{
@@ -37,20 +60,20 @@ body{
     font-weight: 400;
     font-size: 20px;
     line-height: 40px;
-    color: #fff;
+    color: #000;
 }
 
 .main .footer .footer-links .link p{
     font-size: 12px;
     line-height: 18px;
     letter-spacing: 0.05em;
-    color: #ccc;
+    color: #000;
 }
 
 .copyright p{
     font-size: 12px;
     line-height: 36px;
-    color: #afafaf;
+    color: #000;
 }
 
 @media screen and (max-width: 1040px) {
@@ -190,7 +213,7 @@ body{
 }
 
 .social-links a {
-    color: #fff; 
+    color: #000; 
     font-size: 24px;
     text-decoration: none; 
     transition: color 0.3s ease;
@@ -220,7 +243,7 @@ body{
     margin: 0 auto;
     max-width: 1200px;
     font-family: 'Lato';
-    color: #fff ;
+    color: #000;
 }
 
 .icon-cart{
