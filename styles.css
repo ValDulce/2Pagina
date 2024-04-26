@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
-
-
 .menu {
 	display: flex;
 	gap: 2rem;
@@ -220,13 +218,6 @@ h1 {
     color: #007bff; 
 }
 
-
-
-
-
-
-
-
 /* Globales */
 *::after,
 *::before,
@@ -241,7 +232,7 @@ body{
     max-width: 1200px;
     font-family: 'Lato';
     color: #000;
-    background-color:  #fff;
+    background-color: #ffd092;
 }
 
 .icon-cart{
@@ -381,6 +372,7 @@ header{
 
 .item{
     border-radius: 10px;
+    background-color: #ffdbac;
 }
 
 .item:hover{
@@ -409,6 +401,7 @@ header{
     display: flex;
     flex-direction: column;
     gap: 10px;
+   
 }
 
 .price{
