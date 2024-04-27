@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
+
+
+
 .menu {
 	display: flex;
 	gap: 2rem;
@@ -25,7 +28,7 @@ h1 {
   
 .main .footer{
     margin: 50px 0;
-    
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -222,6 +225,7 @@ h1 {
     color: #007bff; 
 }
 
+
 /* Globales */
 *::after,
 *::before,
@@ -230,7 +234,6 @@ h1 {
     padding: 0;
     box-sizing: border-box;
 }
-
 body{
     margin: 0 auto;
     max-width: 1200px;
@@ -254,15 +257,27 @@ img{
 }
 
 /* Header */
+
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffdbac; /* Color de fondo del encabezado */
+    z-index: 1000; /* Asegura que el encabezado aparezca por encima de otros elementos */
+    /* Otros estilos adicionales según sea necesario */
+}
 header{
     display: flex;
     justify-content: space-between;
-    padding: 10px 0 0px 0;
+    padding: 10px 0 ;
     width: 100%;
     top:0;
     z-index:1000;
-    background-color:#ffdbac;
+    background-color:#fff;
    
+    
 }
 
 .container-icon{
