@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
-
-
-
 .menu {
 	display: flex;
 	gap: 2rem;
@@ -34,6 +31,8 @@ h1 {
     justify-content: space-between;
     background-color:#ffdbac;
 
+    
+    
 }
 
 .main .copyright{
@@ -389,6 +388,11 @@ header{
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
+.main .productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
 
 .item{
     border-radius: 10px;
@@ -458,4 +462,18 @@ header{
 	text-align: center;
 	font-weight: 500;
 	font-size: 3rem;
+}
+.heading-1 {
+    width: 100%; /* Asegura que el título ocupe todo el ancho del contenedor */
+    text-align: center;
+}
+/*PRODUCTOS -CHIPS */
+#chips {
+   right: 80px; /* Ajusta el valor según sea necesario para mover el título hacia la derecha */
+    /* Otros estilos adicionales según sea necesario */
+    
+}
+#chuches {
+    right: 80px; /* Ajusta el valor según sea necesario para mover el título hacia la derecha */
+    /* Otros estilos adicionales según sea necesario */
 }
