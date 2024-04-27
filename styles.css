@@ -5,7 +5,10 @@
 	gap: 2rem;
     
 }
-
+p{
+    font-size: 25px; /* Tamaño de fuente en píxeles */
+    font-family: Arial, sans-serif; /* Tipo de fuente */
+}
 .menu li {
 	list-style: none;
 }
@@ -24,52 +27,26 @@ h1 {
   }
   
 .main .footer{
-    text-align: center;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  font-size: 1em;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+ position:sticky;/*posicion*/
+  position:initial;/*posicion*/
+  width: 100%;/*tamaño*/
+  font-size: 1em;/*tipo de letra*/
+  height: 170px;/*altura*/
+  display: flex;/*que sea flexible*/
+  align-items: center;/*eje vertical*/ 
   border: 1px solid #ffdbac;
   background-color:#ffdbac;
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-    
+ 
+  
     
 }
 .main .footer1{
-    width: 1000px; /* Establece un ancho de 1000 píxeles */
+    width: 1200px; /* Establece un ancho de 1000 píxeles */
     height: 500px; /* Establece una altura de 500 píxeles */
     
     
 }
-.main .copyright1{
-    padding-bottom: 25px;
-    
-    background-color:#fff;
-}
-/*.main .copyright{
-    text-align: center;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  font-size: 1em;
-  height: 100px;
-  display: flex;
-  justify-content: r;
-  align-items: left;
-  border: 1px solid #ffdbac;
- 
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-}*/
+
 .main .footer .footer-header{
     max-width: 100%;
     font-weight: 500;
@@ -88,7 +65,7 @@ h1 {
 
 .main .footer .footer-links .link h5{
     font-weight: 400;
-    font-size: 20px;
+    font-size: 25px;
     line-height: 40px;
     color: #000;
 }
@@ -132,38 +109,6 @@ h1 {
 
     .main .footer .footer-links .link:first-child{
         margin: 0;
-    }
-}
-
-@media screen and (max-width: 925px) {
-    .navbar .nav-links{
-        display: none;
-    }
-
-    .navbar .nav-buttons{
-        opacity: 0;
-    }
-
-    .navbar .toggler{
-        display: flex !important;
-        align-items: center;
-    }
-
-    .get-started .info-text{
-        text-align: center;
-    }
-
-    .get-started .items-box{
-        display: grid;
-        grid-template-columns: auto auto;
-        justify-content: space-evenly;
-        padding: 50px 0;
-    }
-
-    .get-started .items-box:before{
-        height: 200px;
-        top: 90px;
-        filter: blur(120px);
     }
 }
 
@@ -336,6 +281,12 @@ header{
     position: absolute;
     top: 50px;
     right: 0;
+    overflow-y: auto;
+    max-height: 400px;
+    .row-product {
+        /* Establecer una anchura para que los elementos no se ajusten */
+        width: 100%;
+    }
 
     background-color: #fff;
     width: 400px;
