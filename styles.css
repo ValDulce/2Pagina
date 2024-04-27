@@ -24,23 +24,52 @@ h1 {
   }
   
 .main .footer{
-    margin: 50px 0;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color:#ffdbac;
-
+    text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  font-size: 1em;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ffdbac;
+  background-color:#ffdbac;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
     
     
 }
-
-.main .copyright{
+.main .footer1{
+    width: 1000px; /* Establece un ancho de 1000 píxeles */
+    height: 500px; /* Establece una altura de 500 píxeles */
+    
+    
+}
+.main .copyright1{
     padding-bottom: 25px;
-    border-top: 1px solid #000;
-    background-color:#ffdbac;
+    
+    background-color:#fff;
 }
-
+/*.main .copyright{
+    text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  font-size: 1em;
+  height: 100px;
+  display: flex;
+  justify-content: r;
+  align-items: left;
+  border: 1px solid #ffdbac;
+ 
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}*/
 .main .footer .footer-header{
     max-width: 100%;
     font-weight: 500;
@@ -476,4 +505,11 @@ header{
 #chuches {
     right: 80px; /* Ajusta el valor según sea necesario para mover el título hacia la derecha */
     /* Otros estilos adicionales según sea necesario */
+}
+
+
+.container-categories {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 3rem;
 }
