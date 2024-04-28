@@ -375,12 +375,13 @@ header{
 }
 
 .item{
-    
+    position: relative;
     background-color: #ffdbac;
     border: 2px solid #ffdbac;
     border-radius: 10px; /* Ajusta el valor según el radio de redondeo que desees */
     padding: 15px;
-
+    overflow: hidden;
+ 
 }
 
 .item:hover{
@@ -545,6 +546,7 @@ header{
 .card-category span:hover {
 	color: var(--primary-color);
 }
+<<<<<<< HEAD
  /* Descripcion*/
 
  .Descripcion{
@@ -554,3 +556,49 @@ header{
     color:#000;
     text-align: justify;
  }
+=======
+
+.descripcion{
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+
+  }
+
+  .carousel img {
+
+    overflow-y: auto;
+    max-height: 400px;
+  }
+
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px; /* Ancho de la flecha */
+    height: 30px; /* Altura de la flecha */
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .arrow.left {
+    left: 10px;
+  }
+
+  .arrow.right {
+    right: 10px;
+  }
+>>>>>>> d8594475cd4d8f3c9a62d36d4d52041d4badea11
