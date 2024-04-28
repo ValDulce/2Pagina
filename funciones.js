@@ -125,7 +125,47 @@ const showHTML = () => {
 	valorTotal.innerText = `$${total}`;
 	countProducts.innerText = totalOfProducts;
 };
+///////////////////////////////////////////////////////////////////7
+// Obtener los datos del carrito del localStorage al cargar la página
+window.addEventListener('DOMContentLoaded', () => {
+    const savedCart = JSON.parse(localStorage.getItem('cart'));
+    if (savedCart) {
+        allProducts = savedCart;
+        showHTML();
+    }
+});
 
+
+/////FUNCION CARRUSEL 
+
+// Función para guardar los datos del carrito en el localStorage
+const saveCartToLocalStorage = () => {
+    localStorage.setItem('cart', JSON.stringify(allProducts));
+};
+
+// Escuchar eventos para agregar productos al carrito
+productsList.addEventListener('click', e => {
+    if (e.target.classList.contains('btn-add-cart')) {
+        // Resto del código para agregar productos al carrito...
+
+        // Después de agregar el producto, guarda el carrito en el localStorage
+        saveCartToLocalStorage();
+    }
+});
+
+// Escuchar eventos para eliminar productos del carrito
+rowProduct.addEventListener('click', e => {
+    if (e.target.classList.contains('icon-close')) {
+        // Resto del código para eliminar productos del carrito...
+
+        // Después de eliminar el producto, guarda el carrito en el localStorage
+        saveCartToLocalStorage();
+    }
+});
+
+///////////////////////////////
+
+// FUNCION DE CARRITO ///
 // Función para mostrar la diapositiva anterior en el carrusel dentro del elemento 'item'
 function prevSlide(itemIndex) {
     var carousel = document.querySelectorAll('.item')[itemIndex].querySelector('.carousel');
