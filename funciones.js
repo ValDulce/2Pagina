@@ -126,30 +126,28 @@ const showHTML = () => {
 	countProducts.innerText = totalOfProducts;
 };
 
-let slideIndex = 0;
-const slides = document.querySelectorAll('.carousel img');
-
-function showSlides() {
-  slides.forEach(slide => {
-	slide.style.display = 'none';
-  });
-  slides[slideIndex].style.display = 'block';
+// Función para mostrar la diapositiva anterior en el carrusel dentro del elemento 'item'
+function prevSlide(itemIndex) {
+    var carousel = document.querySelectorAll('.item')[itemIndex].querySelector('.carousel');
+    var slides = carousel.querySelectorAll('figure img');
+    var currentSlide = carousel.querySelector('.active');
+    var prevIndex = Array.from(slides).indexOf(currentSlide) - 1;
+    if (prevIndex < 0) {
+        prevIndex = slides.length - 1;
+    }
+    currentSlide.classList.remove('active');
+    slides[prevIndex].classList.add('active');
 }
 
-function prevSlide() {
-  slideIndex--;
-  if (slideIndex < 0) {
-	slideIndex = slides.length - 1;
-  }
-  showSlides();
+// Función para mostrar la siguiente diapositiva en el carrusel dentro del elemento 'item'
+function nextSlide(itemIndex) {
+    var carousel = document.querySelectorAll('.item')[itemIndex].querySelector('.carousel');
+    var slides = carousel.querySelectorAll('figure img');
+    var currentSlide = carousel.querySelector('.active');
+    var nextIndex = Array.from(slides).indexOf(currentSlide) + 1;
+    if (nextIndex >= slides.length) {
+        nextIndex = 0;
+    }
+    currentSlide.classList.remove('active');
+    slides[nextIndex].classList.add('active');
 }
-
-function nextSlide() {
-  slideIndex++;
-  if (slideIndex >= slides.length) {
-	slideIndex = 0;
-  }
-  showSlides();
-}
-
-showSlides(); // Mostrar la primera imagen al cargar la página

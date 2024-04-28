@@ -84,28 +84,30 @@
       
         <div class="container-items">
             <div class="item">
-                <div class="carousel">
+            <div class="carousel">
                 <figure>
-                   
-                        <img src="Imagenes/sprite.jpg" alt="producto" />
-                        <img src="Imagenes/cheetos.jpg" alt="producto" />
-                      </div>
-                      <div class="arrow left" onclick="prevSlide()">&#10094;</div>
-                      <div class="arrow right" onclick="nextSlide()">&#10095;</div>
-                
-                </figure>
+                     <img src="Imagenes/sprite.jpg" alt="producto" class="active" />
+                     <img src="Imagenes/cheetos.jpg" alt="producto"  />
+                </figure> 
+                <div class="arrow left" onclick="prevSlide(0)">&#10094;</div>
+                <div class="arrow right" onclick="nextSlide(0)">&#10095;</div>
+                    </div>
              <div class="info-product">
                     <h2>Sprite</h2>
-
                     <p class="price">$18</p>
                     <button class="btn-add-cart">Añadir al carrito</button>
-                </div>
+              </div>
             </div>
 
-            <div class="item">
+        <div class="item">
+            <div class="carousel">
                 <figure>
-                    <img src="Imagenes/pepsi.jpg" alt="producto" />
-                </figure>
+                    <img src="Imagenes/pepsi.jpg" alt="producto" class="active" />
+                    <img src="Imagenes/drppp.jpg" alt="producto"  />
+                 </figure>
+                 <div class="arrow left" onclick="prevSlide(1)">&#10094;</div>
+                 <div class="arrow right" onclick="nextSlide(1)">&#10095;</div>
+            </div>
                 
                 <div class="info-product">
                     <h2>Pepsi</h2>
@@ -115,9 +117,14 @@
             </div>
 
             <div class="item">
-                <figure>
-                    <img src="Imagenes/fuze.jpg" alt="producto" />
+                <div class="carousel">
+                    <figure>
+                    <img src="Imagenes/fuze.jpg" alt="producto" class="active"/>
+                    <img src="Imagenes/dori.jpg" alt="producto"  />
                 </figure>
+                <div class="arrow left" onclick="prevSlide(2)">&#10094;</div>
+                <div class="arrow right" onclick="nextSlide(2)">&#10095;</div>
+           </div>
                 <div class="info-product">
                     <h2>Fuzetea</h2>
                     <p class="price">$20</p>
@@ -125,9 +132,14 @@
                 </div>
             </div>
             <div class="item">
-                <figure>
-                    <img src="Imagenes/drpp.jpg" alt="producto" />
+                <div class="carousel">
+                    <figure>
+                    <img src="Imagenes/drpp.jpg" alt="producto" class="active" />
+                    <img src="Imagenes/dori.jpg" alt="producto"  />
                 </figure>
+                <div class="arrow left" onclick="prevSlide(3)">&#10094;</div>
+                <div class="arrow right" onclick="nextSlide(3)">&#10095;</div>
+           </div>
                 <div class="info-product">
                     <h2>Dr. Peper</h2>
                     <p class="price">$19</p>
@@ -135,9 +147,14 @@
                 </div>
             </div>
             <div class="item">
-                <figure>
-                    <img src="Imagenes/cocacola.png" alt="producto" />
+                <div class="carousel">
+                    <figure>
+                    <img src="Imagenes/cocacola.png" alt="producto" class="active"/>
+                    <img src="Imagenes/dori.jpg" alt="producto"  />
                 </figure>
+                <div class="arrow left" onclick="prevSlide(4)">&#10094;</div>
+                <div class="arrow right" onclick="nextSlide(4)">&#10095;</div>
+           </div>
                 <div class="info-product">
                     <h2>CocaCola</h2>
                     <p class="price">$17</p>
@@ -150,9 +167,14 @@
             <div> <h1 class="heading-1" id="chips"></h1></div>
             <div> <h1 class="heading-1" id="chips"></h1></div>
             <div class="item">
-                <figure>
-                    <img src="Imagenes/cheetosn.jpg" alt="producto" />
+                <div class="carousel">
+                    <figure>
+                    <img src="Imagenes/cheetosn.jpg" alt="producto" class="active"/>
+                    <img src="Imagenes/dori.jpg" alt="producto"  />
                 </figure>
+                <div class="arrow left" onclick="prevSlide(5)">&#10094;</div>
+                <div class="arrow right" onclick="nextSlide(5)">&#10095;</div>
+           </div>
                 <div class="info-product">
                     <h2>Chetos</h2>
                     <p class="price">$17</p>
@@ -161,9 +183,14 @@
             </div>
 
             <div class="item">
-                <figure>
-                    <img src="Imagenes/dori.jpg" alt="producto" />
+                <div class="carousel">
+                    <figure>
+                    <img src="Imagenes/dori.jpg" alt="producto" class="active"/>
+                    <img src="Imagenes/sprite.jpg" alt="producto"  />
                 </figure>
+                <div class="arrow left" onclick="prevSlide(6)">&#10094;</div>
+                <div class="arrow right" onclick="nextSlide(6)">&#10095;</div>
+           </div>
                 <div class="info-product">
                     <h2>Doritos</h2>
                     <p class="price">$19</p>
@@ -172,9 +199,14 @@
             </div>
 
             <div class="item">
-                <figure>
-                    <img src="Imagenes/chip.jpg" alt="producto" />
+                <div class="carousel">
+                    <figure>
+                    <img src="Imagenes/chip.jpg" alt="producto" class="active"/>
+                    <img src="Imagenes/dori.jpg" alt="producto"  />
                 </figure>
+                <div class="arrow left" onclick="prevSlide(7)">&#10094;</div>
+                <div class="arrow right" onclick="nextSlide(7)">&#10095;</div>
+           </div>
                 <div class="info-product">
                     <h2>Chips</h2>
                     <p class="price">$18</p>
@@ -182,9 +214,14 @@
                 </div>
             </div>
             <div class="item">
-                <figure>
-                    <img src="Imagenes/takis.png" alt="producto" />
+                <div class="carousel">
+                    <figure>
+                    <img src="Imagenes/takis.png" alt="producto"class="active" />
+                    <img src="Imagenes/dori.jpg" alt="producto"  />
                 </figure>
+                <div class="arrow left" onclick="prevSlide(8)">&#10094;</div>
+                <div class="arrow right" onclick="nextSlide(8)">&#10095;</div>
+           </div>
                 <div class="info-product">
                     <h2>Takis</h2>
                     <p class="price">$19</p>
@@ -192,9 +229,14 @@
                 </div>
            </div>
            <div class="item">
-            <figure>
-                <img src="Imagenes/papass.jpg" alt="producto" />
+            <div class="carousel">
+                <figure>
+                <img src="Imagenes/papass.jpg" alt="producto"class="active" />
+                <img src="Imagenes/dori.jpg" alt="producto"  />
             </figure>
+            <div class="arrow left" onclick="prevSlide(9)">&#10094;</div>
+            <div class="arrow right" onclick="nextSlide(9)">&#10095;</div>
+       </div>
             <div class="info-product">
                 <h2>Sabritas</h2>
                 <p class="price">$20</p>
@@ -209,9 +251,14 @@
        <div> <h1 class="heading-1" id="chips"></h1></div>
         
             <div class="item">
-                <figure>
-                    <img src="Imagenes/lucas.jpg" alt="producto" />
+                <div class="carousel">
+                    <figure>
+                    <img src="Imagenes/lucas.jpg" alt="producto" class="active"/>
+                    <img src="Imagenes/dori.jpg" alt="producto"  />
                 </figure>
+                <div class="arrow left" onclick="prevSlide(10)">&#10094;</div>
+                <div class="arrow right" onclick="nextSlide(10)">&#10095;</div>
+           </div>
                 <div class="info-product">
                     <h2>Lucas Muecas</h2>
                     <p class="price">$8</p>
@@ -220,9 +267,14 @@
             </div>
 
             <div class="item">
-                <figure>
-                    <img src="Imagenes/lucasp.jpg" alt="producto" />
+                <div class="carousel">
+                    <figure>
+                    <img src="Imagenes/lucasp.jpg" alt="producto" class="active"/>
+                    <img src="Imagenes/dori.jpg" alt="producto"  />
                 </figure>
+                <div class="arrow left" onclick="prevSlide(11)">&#10094;</div>
+                <div class="arrow right" onclick="nextSlide(11)">&#10095;</div>
+           </div>
                 <div class="info-product">
                     <h2>Lucas Panzon</h2>
                     <p class="price">$12</p>
@@ -231,9 +283,14 @@
             </div>
 
             <div class="item">
-                <figure>
-                    <img src="Imagenes/kit.jpg" alt="producto" />
+                <div class="carousel">
+                    <figure>
+                    <img src="Imagenes/kit.jpg" alt="producto" class="active"/>
+                    <img src="Imagenes/dori.jpg" alt="producto"  />
                 </figure>
+                <div class="arrow left" onclick="prevSlide(12)">&#10094;</div>
+                <div class="arrow right" onclick="nextSlide(12)">&#10095;</div>
+           </div>
                 
                 <div class="info-product">
                     <h2>kitkat
@@ -244,9 +301,14 @@
                 </div>
             </div>
             <div class="item">
-                <figure>
-                    <img src="Imagenes/mm.jpg" alt="producto" />
+                <div class="carousel">
+                    <figure>
+                    <img src="Imagenes/mm.jpg" alt="producto" class="active"/>
+                    <img src="Imagenes/dori.jpg" alt="producto"  />
                 </figure>
+                <div class="arrow left" onclick="prevSlide(13)">&#10094;</div>
+                <div class="arrow right" onclick="nextSlide(13)">&#10095;</div>
+           </div>
                 <div class="info-product">
                     <h2>
                         M&M´s Cacahuate
@@ -256,9 +318,14 @@
                 </div>
             </div>
             <div class="item">
-                <figure>
-                    <img src="Imagenes/buba.jpg" alt="producto" />
+                <div class="carousel">
+                    <figure>
+                    <img src="Imagenes/buba.jpg" alt="producto" class="active"/>
+                    <img src="Imagenes/dori.jpg" alt="producto"  />
                 </figure>
+                <div class="arrow left" onclick="prevSlide(14)">&#10094;</div>
+                <div class="arrow right" onclick="nextSlide(14)">&#10095;</div>
+           </div>
                 <div class="info-product">
                     <h2>Bubbalo rollo
                     </h2>

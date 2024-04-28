@@ -567,7 +567,13 @@ header{
     text-align: justify;
 }
 
+.carousel figure img {
+    display: none;
+}
 
+.carousel figure img.active {
+    display: block;
+}
 
 .carousel {
     display: flex;
