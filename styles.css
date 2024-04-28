@@ -545,3 +545,12 @@ header{
 .card-category span:hover {
 	color: var(--primary-color);
 }
+ /* Descripcion*/
+
+ .Descripcion{
+    font-family:Arial, sans-serif ;
+    font-size: 18px;
+    line-height: 1.5;
+    color:#000;
+    text-align: justify;
+ }
