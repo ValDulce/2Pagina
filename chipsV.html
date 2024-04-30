@@ -7,55 +7,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" href="Imagenes/logo.jpg" type="image/png">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Estilos2.css">
     <title>Tiendita</title>
 </head>
 <header>
-    <header class="fixed-header">
-    <ul class="menu">
-        <li><a href="index.html#inicio">Inicio</a></li>
-        <li><a href="#sodas">Sodas</a></li>
-        <li><a href="#chips">Chips</a></li>
-        <li class=" ESPACIO "><a href="#chuches">Chuches</a></li>
-    </ul>
-    
-    <div class="main">
-        <!-- Top Container -->
-        <div class="container-icon">
-            <div class="container-cart-icon">
-
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="icon-cart">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
-                </svg>
-
-
-                <div class="count-products">
-                    <span id="contador-productos">0</span>
+    <div class ="content"></div>
+    <div class="mantain-coiner">
+      <header class="fixed-header">
+        <div class="container-navbar">
+          <nav class="navbar container">
+            <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            <ul class="menu">
+              <li><a href="index2.html">Inicio</a></li>
+              <li><a href="index2.html">Sodas</a></li>
+              <li><a href="index2.html">Chips</a></li>
+              <li><a href="index2.html#chuches">Chuches</a></li>
+              <li class=" ESPACIO "><a href="chipsV.html#mas">Más</a></li>
+             
+              <li>
+                <div class="container-logo">
+                  <i class="fa-solid fa-store" aria-hidden="true"></i>
+                  <h1 class="logo">Tiendita</h1>
                 </div>
-            </div>
-
-            <div class="container-cart-products hidden-cart">
-                <div class="row-product hidden">
-                    <div class="cart-product">
-                        <div class="info-cart-product">
-                        </div>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke-width="1.5" stroke="currentColor" class="icon-close">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                        </svg>
-                    </div>
-                </div>
-
-                <div class="cart-total hidden">
-                    <h3>Total:</h3>
-                    <span class="total-pagar"></span>
-                </div>
-                <p class="cart-empty"></p>
-            </div>
+              </li>
+            </ul>
+                    
+          
+            <div class="main">
+              <!-- Top Container -->
+              <div class="container-icon">
+                  <div class="container-cart-icon">
+      
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                      stroke="currentColor" class="icon-cart">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                  </svg>
+      
+      
+                      <div class="count-products">
+                          <span id="contador-productos">0</span>
+                      </div>
+                  </div>
+      
+                  <div class="container-cart-products hidden-cart">
+                      <div class="row-product hidden">
+                          <div class="cart-product">
+                              <div class="info-cart-product">
+                              </div>
+                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                  stroke-width="1.5" stroke="currentColor" class="icon-close">
+                                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                              </svg>
+                          </div>
+                      </div>
+      
+                      <div class="cart-total hidden">
+                          <h3>Total:</h3>
+                          <span class="total-pagar"></span>
+                      </div>
+                      <p class="cart-empty"></p>
+                  </div>
+              </div>
+  
+          </nav>
         </div>
-</header>
+      </header>
+    </div> 
+      
 
 <body>
     <div class="main">
@@ -127,41 +146,76 @@
 </body>
 <br>
 <br>
-        <!-- Footer -->
-        <div class="footer">
-            <div class="footer-header">
-                Siguenos en nuestras redes sociales ahora y mantente al día con nuevas colecciones y ofertas exclusivas.
-            </div>
-            <div class="footer-links">
-                <div class="link">
-                    <h5>Teléfonos</h5>
-                    <p>4491234567</p>
-                    <p>4497654321</p>
-                </div>
-
-                <div class="link">
-                    <h5>Correos</h5>
-                    <p>AtencionAlCliente@gmai.com</p>
-                    <p>Sugerencias@Tiendita.com</p>
-                </div>
-                <div class="link">
-                    <h5>Desarrolladores</h5>
-                    <p>Daniela Reyes</p>
-                    <p>Dulce Arredondo</p>
-                </div>
-                <div class="link">
-                    <h5>Redes</h5>
-                    <div class="social-links">
-                        <a href="https://www.facebook.com/delirest" target="_blank"><i
-                                class='bx bxl-facebook-square'></i></a>
-                        <a href="https://www.instagram.com/delirest" target="_blank"><i
-                                class='bx bxl-instagram'></i></a>
-                        <a href="https://twitter.com/delirest" target="_blank"><i class='bx bxl-twitter'></i></a>
-                        <a href="https://api.whatsapp.com/send?phone=TuNumeroDeTelefono&text=Hola%20DeliRest"
-                            target="_blank"><i class='bx bxl-whatsapp'></i></a>
-                    </div>
-                </div>
-
-            </div>
+<footer class="footer" id="mas">
+    <div class="container container-footer">
+      <div class="menu-footer">
+        <div class="contact-info">
+          <p class="title-footer">Información de Contacto</p>
+          <ul>
+            <li> Dirección: 71 Pennington Lane Vernon Rockville, CT 06066 </li>
+            <li>Teléfono: 123-456-7890</li>
+            <li>Fax: 55555300</li>
+            <li>EmaiL: baristas@support.com</li>
+          </ul>
+          <div class="social-icons">
+            <span class="facebook">
+             <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+            </span>
+            <span class="twitter">
+              <a href="https://www.twitter.com"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
+            </span>
+            <span class="youtube">
+              <a href="https://www.youtube.com"> <i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+            </span>
+            <span class="pinterest">
+              <a href="https://www.pinterest.com"><i class="fa-brands fa-pinterest-p" aria-hidden="true"></i></a>
+            </span>
+            <span class="instagram">
+              <a href="https://www.instagram.com"> <i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+            </span>
+          </div>
         </div>
+        <div class="information">
+          <p class="title-footer">Información</p>
+          <ul>
+            <li><a href="#">Acerca de Nosotros</a></li>
+            <li><a href="#">Información Delivery</a></li>
+            <li><a href="#">Politicas de Privacidad</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+            <li><a href="#">Contactános</a></li>
+          </ul>
+        </div>
+        <div class="my-account">
+          <p class="title-footer">Mi cuenta</p>
+          <ul>
+            <li><a href="#">Mi cuenta</a></li>
+            <li><a href="#">Historial de ordenes</a></li>
+            <li><a href="#">Lista de deseos</a></li>
+            <li><a href="#">Boletín</a></li>
+            <li><a href="#">Reembolsos</a></li>
+          </ul>
+        </div>
+        <div class="newsletter">
+          <p class="title-footer">Boletín informativo</p>
+          <div class="content">
+            <p> Suscríbete a nuestros boletines ahora y mantente al día con nuevas colecciones y ofertas exclusivas. </p>
+            <input type="email" placeholder="Ingresa el correo aquí...">
+            <button>Suscríbete</button>
+          </div>
+        </div>
+      </div>
+      <div class="customer-support">
+        <i class="fa-solid fa-headset" aria-hidden="true"></i>
+        <div class="content-customer-support">
+          <span class="text">Soporte al cliente</span>
+          <span class="number">449-257-7808</span>
+        </div>
+      </div>
+      <div class="copyright">
+        <p> Desarrollado por Daniela Reyes y Dulce Marina; 2024 </p>
+        <img src="Imagenes/payment.png" alt="Pagos">
+      </div>
+    </div>
+  
+  </footer>
 </html>
