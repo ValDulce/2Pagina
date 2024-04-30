@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --primary-color: #c7a17a;
+    --primary-color: #A51C30;
     --background-color: #f9f5f0;
-    --dark-color: #151515;
+    --dark-color: #fff;
 }
 
 html {
@@ -139,6 +139,7 @@ h5 {
 .menu {
     display: flex;
     gap: 2rem;
+
 }
 
 .menu li {
@@ -595,7 +596,7 @@ p {
 /* ********************************** */
 
 .footer {
-    background-color: var(--primary-color);
+    background-color:#A51C30;
 }
 
 .container-footer {
