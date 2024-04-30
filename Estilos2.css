@@ -749,3 +749,13 @@ p {
     font-weight: 400;
     font-size: 1.6rem;
 }
+
+
+/* Estilo del logo */
+.logo img {
+    width: 100px; /* Ajusta el tamaño según necesites */
+    height: auto;
+    border-radius: 40%; /* Esto hace que el contenedor del logo sea un círculo */
+    overflow: hidden; /* Oculta cualquier contenido que se extienda más allá del borde */
+    margin-left: 50px; /* Ajusta el margen derecho para separar el logo de los elementos de navegación */
+}
