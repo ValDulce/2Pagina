@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --primary-color: #c7a17a;
+    --primary-color: #A51C30;
     --background-color: #f9f5f0;
-    --dark-color: #151515;
+    --dark-color: #fff;
 }
 
 html {
@@ -142,6 +142,7 @@ h2 {
 .menu {
     display: flex;
     gap: 2rem;
+
 }
 
 .menu li {
@@ -598,7 +599,7 @@ p {
 /* ********************************** */
 
 .footer {
-    background-color: var(--primary-color);
+    background-color:#A51C30;
 }
 
 .container-footer {
@@ -751,4 +752,14 @@ p {
 .copyright p {
     font-weight: 400;
     font-size: 1.6rem;
+}
+
+
+/* Estilo del logo */
+.logo img {
+    width: 100px; /* Ajusta el tamaño según necesites */
+    height: auto;
+    border-radius: 40%; /* Esto hace que el contenedor del logo sea un círculo */
+    overflow: hidden; /* Oculta cualquier contenido que se extienda más allá del borde */
+    margin-left: 50px; /* Ajusta el margen derecho para separar el logo de los elementos de navegación */
 }
