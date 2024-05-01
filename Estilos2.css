@@ -736,3 +736,20 @@ p {
     overflow: hidden; /* Oculta cualquier contenido que se extienda más allá del borde */
     margin-left: 50px; /* Ajusta el margen derecho para separar el logo de los elementos de navegación */
 }
+
+.stars {
+    display: flex; /* Cambiamos de grid a flexbox para simplificar el diseño */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 10%; /* Ajusta la altura del contenedor */
+  }
+  
+  .stars i {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    margin: 0 2px; /* Ajusta el margen entre las estrellas */
+  }
+
+  
+  
+  
