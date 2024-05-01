@@ -436,6 +436,7 @@ p {
 .price {
 	font-size: 18px;
 	font-weight: 900;
+    text-align: center;
 }
 
 .info-product button {
