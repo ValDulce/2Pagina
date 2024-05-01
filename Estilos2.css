@@ -80,7 +80,7 @@ h2 {
 
 .container-logo h1 a {
     text-decoration: none;
-    color: #000;
+    color:#fff;
     font-size: 3rem;
     text-transform: uppercase;
     letter-spacing: -1px;
@@ -190,35 +190,7 @@ h2 {
     overflow: hidden;
 }
 
-.search-form input {
-    outline: none;
-    font-family: inherit;
-    border: none;
-    width: 25rem;
-    font-size: 1.4rem;
-    padding: 0 2rem;
-    color: #777;
-    cursor: pointer;
-}
 
-.search-form input::-webkit-search-cancel-button {
-    appearance: none;
-}
-
-.search-form .btn-search {
-    border: none;
-    background-color: var(--primary-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    padding: 1rem;
-}
-
-.btn-search i {
-    font-size: 2rem;
-    color: #fff;
-}
 
 
 
@@ -398,7 +370,7 @@ p {
 .item {
 	position: relative;
 	background-color: #fff;
-	border: 2px solid #ffdbac;
+	border: 2px solid #A51C30;
 	border-radius: 10px;
 	padding: 15px;
 	overflow: hidden;
