@@ -113,7 +113,7 @@ h2 {
 /* ************* NAVBAR ************* */
 .container-navbar {
     background-color: var(--primary-color);
-    padding: 10px 0;
+    padding: 1px 0;
     width: 100%;
     top: 0;
     z-index: 1000;
