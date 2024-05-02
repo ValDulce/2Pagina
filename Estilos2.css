@@ -529,7 +529,7 @@ p {
 	gap: 2rem;
 }
 
-.category-moca {
+.category-soda {
 	background-image: linear-gradient(#00000080, #00000080),
 		url('Imagenes/soda.jpg');
 	background-size: cover;
@@ -537,7 +537,7 @@ p {
 	background-repeat: no-repeat;
 }
 
-.category-capuchino {
+.category-chuche {
 	background-image: linear-gradient(#00000080, #00000080),
 		url('Imagenes/chunche.jpg');
 	background-size: cover;
@@ -545,7 +545,7 @@ p {
 	background-repeat: no-repeat;
 }
 
-.category-expreso {
+.category-chips {
 	background-image: linear-gradient(#00000080, #00000080),
 		url('Imagenes/chips.jpg');
 	background-size: cover;
