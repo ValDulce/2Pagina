@@ -18,6 +18,12 @@ h5 {
 h2 {
     text-align: center;
 }
+h1.Tiendita {
+    color: white; /* Establece el color del texto como blanco */
+  }
+  h1 {
+    color: rgb(0, 0, 0); /* Establece el color del texto como blanco */
+  }
 
 * {
     margin: 0;
