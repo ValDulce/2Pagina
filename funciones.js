@@ -163,6 +163,35 @@ rowProduct.addEventListener('click', e => {
     }
 });
 
+function ComprarCarrito() {
+    // Vacía el contador de productos
+    countProducts.innerText = "0";
+
+    // Vacía la lista de productos en el carrito
+    allProducts = [];
+
+    // Actualiza el HTML para reflejar los cambios
+    showHTML();
+	// Muestra el mensaje de agradecimiento por la compra
+    mostrarMensaje('¡Gracias por su compra!');
+
+}
+
+function mostrarMensaje(mensaje) {
+    // Crear elemento de mensaje
+    const mensajeElemento = document.createElement('div');
+    mensajeElemento.classList.add('mensaje');
+    mensajeElemento.textContent = mensaje;
+
+        // Agregar el mensaje al cuerpo del documento
+    document.body.appendChild(mensajeElemento);
+
+    // Eliminar el mensaje después de unos segundos
+    setTimeout(() => {
+        mensajeElemento.remove();
+    }, 3000); // El mensaje se eliminará después de 3 segundos (3000 milisegundos)
+}
+
 ///////////////////////////////
 
 // FUNCION DE CARRITO ///
