@@ -468,8 +468,8 @@ p {
 	transform: translateY(-50%);
 	width: 30px;
 	height: 30px;
-	background-color: #fff;
-	color:#A51C30 ;
+	/*background-color: #fff;*/
+	color:#46000b ;
 	font-size: 20px;
 	text-align: center;
 	cursor: pointer;
