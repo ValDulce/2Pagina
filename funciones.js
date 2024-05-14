@@ -17,27 +17,41 @@ const productsList = document.querySelector('.container-items');
 // Variable de arreglos de Productos
 let allProducts = [];
 
+// Selecciona el elemento HTML con la clase "total-pagar"
 const valorTotal = document.querySelector('.total-pagar');
 
+
+// Selecciona el elemento HTML con el ID "contador-productos"
 const countProducts = document.querySelector('#contador-productos');
 
+// Selecciona el elemento HTML con la clase "cart-empty"
 const cartEmpty = document.querySelector('.cart-empty');
+
+// Selecciona el elemento HTML con la clase "cart-total"
 const cartTotal = document.querySelector('.cart-total');
 
+// Agrega un evento de escucha a la lista de productos
 productsList.addEventListener('click', e => {
+    
+    // Verifica si el elemento clicado tiene la clase "btn-add-cart"
 	if (e.target.classList.contains('btn-add-cart')) {
+
+        // Obtiene el elemento padre del botón clicado
 		const product = e.target.parentElement;
 
+        // Crea un objeto con la información del producto seleccionado
 		const infoProduct = {
 			quantity: 1,
 			title: product.querySelector('h2').textContent,
 			price: product.querySelector('p').textContent,
 		};
 
+        // Verifica si el producto ya existe en la lista de productos
 		const exits = allProducts.some(
 			product => product.title === infoProduct.title
 		);
 
+        // Si el producto ya existe, actualiza la cantidad
 		if (exits) {
 			const products = allProducts.map(product => {
 				if (product.title === infoProduct.title) {
@@ -48,25 +62,35 @@ productsList.addEventListener('click', e => {
 				}
 			});
 			allProducts = [...products];
-		} else {
+		} else { // Si el producto no existe, lo agrega a la lista
 			allProducts = [...allProducts, infoProduct];
 		}
 
+        // Actualiza la interfaz de usuario
 		showHTML();
 	}
 });
 
+// Agrega un evento de escucha a la fila de productos
 rowProduct.addEventListener('click', e => {
+    
+    // Verifica si el elemento clicado tiene la clase "icon-close"
 	if (e.target.classList.contains('icon-close')) {
-		const product = e.target.parentElement;
-		const title = product.querySelector('p').textContent;
 
+        // Obtiene el elemento padre del ícono de cierre
+		const product = e.target.parentElement;
+
+        // Obtiene el título del producto
+		const title = product.querySelector('p').textContent;
+        
+        // Filtra los productos para eliminar el producto seleccionado
 		allProducts = allProducts.filter(
 			product => product.title !== title
 		);
 
 		console.log(allProducts);
-
+        
+        // Muestra los productos actualizados en la interfaz de usuario
 		showHTML();
 	}
 });
