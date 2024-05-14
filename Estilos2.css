@@ -116,6 +116,13 @@ h1.Tiendita {
     flex-direction: column;
 }
 
+@media only screen and (max-width: 600px) {
+    /* Estilos para pantallas de hasta 600px de ancho */
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Estilos para pantallas de 601px a 1024px de ancho */
+}
 /* ************* NAVBAR ************* */
 .container-navbar {
     background-color: var(--primary-color);
