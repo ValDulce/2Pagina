@@ -89,7 +89,7 @@ rowProduct.addEventListener('click', e => {
 		);
 
 		console.log(allProducts);
-        
+
         // Muestra los productos actualizados en la interfaz de usuario
 		showHTML();
 	}
@@ -110,9 +110,11 @@ const showHTML = () => {
 	// Limpiar HTML
 	rowProduct.innerHTML = '';
 
+    // Inicialización de variables para almacenar el costo total y el número total de productos en el carrito
 	let total = 0;
 	let totalOfProducts = 0;
 
+    // Iteración sobre cada producto en el array 'allProducts'
 	allProducts.forEach(product => {
 		const containerProduct = document.createElement('div');
 		containerProduct.classList.add('cart-product');
@@ -139,13 +141,18 @@ const showHTML = () => {
             </svg>
         `;
 
+        // Se agrega el contenedor del producto al DOM, presumiblemente dentro de otro contenedor llamado 'rowProduct'
 		rowProduct.append(containerProduct);
 
+        // Cálculo del costo total sumando el costo del producto actual al valor actual de 'total'
 		total =
-			total + parseInt(product.quantity * product.price.slice(1));
-		totalOfProducts = totalOfProducts + product.quantity;
+			total + parseInt(product.quantity * product.price.slice(1)); // Se convierte el precio de una cadena a un número y se omite el primer carácter ('$')
+		
+            // Suma de la cantidad del producto actual al valor actual de 'totalOfProducts'
+            totalOfProducts = totalOfProducts + product.quantity;
 	});
 
+    // Actualización del contenido de elementos en el DOM con el costo total y el número total de productos en el carrito
 	valorTotal.innerText = `$${total}`;
 	countProducts.innerText = totalOfProducts;
 };
