@@ -1,5 +1,609 @@
 <!DOCTYPE html>
 <html>
 
+<head>
+  <meta charset="UTF-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name " autor " content " Dulce Arredondo & Daniela Reyes ">
+  <meta " descripcion " content " Una tienda que ofrece productos como diferentes papas, sodas y chuches ">
+  <meta " keywords " content " chuches ">
+  <!--- certificado digital---->
+  <title>Tiendita</title>
+  <link rel="stylesheet" href="Estilos2.css">
+</head>
+
+<body>
+  <div class="content"></div> <!-- Contenido principal de la página -->
+  <div class="mantain-coiner"> <!-- Contenedor para el encabezado fijo -->
+    <header class="fixed-header"> <!-- Encabezado fijo -->
+      <div class="container-navbar"> <!-- Contenedor para la barra de navegación -->
+        <nav class="navbar container"> <!-- Barra de navegación -->
+          <div class="logo">
+            <a href="index.html">
+              <img src="Imagenes/logo.jfif" alt="Nombre de tu empresa">
+            </a>
+
+          </div>
+
+
+
+          <i class="fa-solid fa-bars" aria-hidden="true"></i> <!-- Icono de barras para el menú de navegación -->
+
+          <ul class="menu"> <!-- Lista de elementos del menú de navegación -->
+            <li><a href="#principio">Inicio</a></li> <!-- Enlace al inicio de la página -->
+            <li><a href="#sodas">Sodas</a></li> <!-- Enlace a la sección de sodas -->
+            <li><a href="#chips">Chips</a></li> <!-- Enlace a la sección de chips -->
+            <li><a href="#chuches">Chuches</a></li> <!-- Enlace a la sección de chuches -->
+            <li class=" ESPACIO "><a href="#mas">Más</a></li> <!-- Enlace a la sección adicional -->
+          </ul>
+
+
+
+          <div class="main"> <!-- Contenedor principal de la página -->
+            <!-- Top Container -->
+            <div class="container-icon">
+              <div class="container-cart-icon">
+
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="icon-cart">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                </svg>
+
+
+                <div class="count-products"> <!-- Contenedor para mostrar la cantidad de productos en el carrito -->
+                  <span id="contador-productos">0</span>
+                  <!-- Etiqueta para mostrar la cantidad actual de productos en el carrito -->
+                </div>
+              </div>
+
+              <div class="container-cart-products hidden-cart">
+                <!-- Contenedor para los productos en el carrito, inicialmente oculto -->
+                <div class="row-product hidden"> <!-- Contenedor para cada fila de producto, inicialmente oculto -->
+                  <div class="cart-product"> <!-- Contenedor para un producto en el carrito -->
+                    <div class="info-cart-product"> <!-- Contenedor para la información del producto en el carrito -->
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                      stroke="currentColor" class="icon-close">
+                      <!-- Icono para eliminar el producto del carrito, representa una "X" -->
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                  </div>
+                </div>
+
+                <div class="cart-total hidden">
+                  <!-- Contenedor para mostrar el total de la compra, inicialmente oculto -->
+                  <h3>Total:</h3> <!-- Encabezado para mostrar "Total" -->
+                  <span class="total-pagar"></span> <!-- Span para mostrar el monto total a pagar -->
+                  <button onclick="ComprarCarrito()">COMPRAR</button>
+                  <!-- Botón para realizar la compra, con función "ComprarCarrito()" asociada al evento onclick -->
+                </div>
+                <p class="cart-empty"></p> <!-- Párrafo para mostrar un mensaje en caso de que el carrito esté vacío -->
+              </div>
+            </div>
+
+        </nav>
+      </div>
+    </header>
+  </div>
+
+  <div class="main">
+    <h1 class="heading-1" id="principio">mmmmmm</h1><br>
+    <!-- Encabezado principal de la sección, con identificador "principio" -->
+    <section class="container top-categories" id="inicio"><br><br>
+      <!-- Sección para las categorías principales -->
+      <div>
+        <h1 class="heading-1">Mejores Categorías</h1> <!-- Título de las mejores categorías -->
+      </div>
+      <div class="container-categories"> <!-- Contenedor de las categorías -->
+        <!-- Categoría de Sodas -->
+        <div class="card-category category-soda" id="sodas">
+          <p>Sodas</p>
+          <a href="sodasV.html"><span>Ver más</span></a> <!-- Enlace para ver más detalles -->
+        </div>
+        <!-- Categoría de Chips -->
+        <div class="card-category category-chips">
+          <p>Chips</p>
+          <a href="chipsV.html"><span>Ver más</span></a> <!-- Enlace para ver más detalles -->
+        </div>
+        <!-- Categoría de Chuches -->
+        <div class="card-category category-chuche">
+          <p>Chuches</p>
+          <a href="chuchesV.html"> <span>Ver más</span></a> <!-- Enlace para ver más detalles -->
+        </div>
+
+      </div>
+
+    </section>
+    <h1 class="heading-1" id="sodas">SODAS</h1>
+
+    <div class="container-items">
+      <div class="item">
+        <div class="carousel"> <!-- Carrusel de imágenes -->
+          <figure>
+            <img src="Imagenes/sprite.jpg" alt="producto" class="active" />
+            <!-- Imagen del producto (primera imagen) con clase "active" para mostrarla por defecto -->
+            <img src="Imagenes/dsprite.png" alt="producto" /> <!-- Segunda imagen del producto "descripcion" -->
+          </figure>
+          <div class="arrow left" onclick="prevSlide(0)">&#10094;</div>
+          <!-- Flecha izquierda para el carrusel, al hacer clic se llama a la función prevSlide(0) -->
+          <div class="arrow right" onclick="nextSlide(0)">&#10095;</div>
+          <!-- Flecha derecha para el carrusel, al hacer clic se llama a la función prevSlide(0) -->
+        </div>
+        <div class="stars"> <!-- Contenedor para mostrar la calificación del producto mediante estrellas -->
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+        </div>
+        <div class="info-product"> <!-- Contenedor para la información del producto -->
+          <h2>Sprite</h2> <!-- Nombre del producto 'Sprite' -->
+          <p class="price">$18</p> <!-- Precio del producto -->
+          <button class="btn-add-cart">Añadir al carrito</button> <!-- Botón para añadir el producto al carrito -->
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="carousel"> <!-- Carrusel de imágenes -->
+          <figure>
+            <img src="Imagenes/pepsi.jpg" alt="producto" class="active" />
+            <!-- Imagen del producto (primera imagen) con clase "active" para mostrarla por defecto -->
+            <img src="Imagenes/dspepsi.png" alt="producto" /> <!-- Segunda imagen del producto "descripcion" -->
+          </figure>
+          <div class="arrow left" onclick="prevSlide(1)">&#10094;</div>
+          <!-- Flecha izquierda para el carrusel, al hacer clic se llama a la función prevSlide(0) -->
+          <div class="arrow right" onclick="nextSlide(1)">&#10095;</div>
+          <!-- Flecha izquierda para el carrusel, al hacer clic se llama a la función prevSlide(0) -->
+        </div>
+        <div class="stars"> <!-- Contenedor para mostrar la calificación del producto mediante estrellas -->
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-regular fa-star" aria-hidden="true"></i>
+          <i class="fa-regular fa-star" aria-hidden="true"></i>
+          <i class="fa-regular fa-star" aria-hidden="true"></i>
+          <i class="fa-regular fa-star" aria-hidden="true"></i>
+        </div>
+        <div class="info-product"> <!-- Contenedor para la información del producto -->
+          <h2>Pepsi</h2> <!-- Nombre del producto 'Pepsi' -->
+          <p class="price">$17</p> <!-- Precio del producto -->
+          <button class="btn-add-cart">Añadir al carrito</button> <!-- Botón para añadir el producto al carrito -->
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="carousel"> <!-- Carrusel de imágenes -->
+          <figure>
+            <img src="Imagenes/fuze.jpg" alt="producto" class="active" />
+            <!-- Imagen del producto (primera imagen) con clase "active" para mostrarla por defecto -->
+            <img src="Imagenes/dsfuzetea.png" alt="producto" /> <!-- Segunda imagen del producto "descripcion" -->
+          </figure>
+          <div class="arrow left" onclick="prevSlide(2)">&#10094;</div>
+          <!-- Flecha izquierda para el carrusel, al hacer clic se llama a la función prevSlide(0) -->
+          <div class="arrow right" onclick="nextSlide(2)">&#10095;</div>
+          <!-- Flecha derecha para el carrusel, al hacer clic se llama a la función prevSlide(0) -->
+        </div>
+        <div class="stars"> <!-- Contenedor para mostrar la calificación del producto mediante estrellas -->
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+        </div>
+        <div class="info-product"> <!-- Contenedor para la información del producto -->
+          <h2>Fuzetea</h2> <!-- Nombre del producto 'Fuzetea' -->
+          <p class="price">$20</p> <!-- Precio del producto -->
+          <button class="btn-add-cart">Añadir al carrito</button> <!-- Botón para añadir el producto al carrito -->
+        </div>
+      </div>
+      <div class="item">
+        <div class="carousel"> <!-- Carrusel de imágenes -->
+          <figure>
+            <img src="Imagenes/drpp.jpg" alt="producto" class="active" />
+            <!-- Imagen del producto (primera imagen) con clase "active" para mostrarla por defecto -->
+            <img src="Imagenes/dsdrpp.png" alt="producto" /> <!-- Segunda imagen del producto "descripcion" -->
+          </figure>
+          <div class="arrow left" onclick="prevSlide(3)">&#10094;</div>
+          <!-- Flecha izquierda para el carrusel, al hacer clic se llama a la función prevSlide(0) -->
+          <div class="arrow right" onclick="nextSlide(3)">&#10095;</div>
+          <!-- Flecha derecha para el carrusel, al hacer clic se llama a la función prevSlide(0) -->
+        </div>
+        <div class="stars"> <!-- Contenedor para mostrar la calificación del producto mediante estrellas -->
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-regular fa-star" aria-hidden="true"></i>
+          <i class="fa-regular fa-star" aria-hidden="true"></i>
+          <i class="fa-regular fa-star" aria-hidden="true"></i>
+          <i class="fa-regular fa-star" aria-hidden="true"></i>
+        </div>
+        <div class="info-product"> <!-- Contenedor para la información del producto -->
+          <h2>Dr. Peper</h2> <!-- Nombre del producto 'Dr. Peper' -->
+          <p class="price">$19</p> <!-- Precio del producto -->
+          <button class="btn-add-cart">Añadir al carrito</button> <!-- Botón para añadir el producto al carrito -->
+        </div>
+      </div>
+      <div class="item">
+        <div class="carousel"> <!-- Carrusel de imágenes -->
+          <figure>
+            <img src="Imagenes/cocacola.png" alt="producto" class="active" />
+            <!-- Imagen del producto (primera imagen) con clase "active" para mostrarla por defecto -->
+            <img src="Imagenes/dscocacola.png" alt="producto" /> <!-- Segunda imagen del producto "descripcion" -->
+          </figure>
+          <div class="arrow left" onclick="prevSlide(4)">&#10094;</div>
+          <!-- Flecha izquierda para el carrusel, al hacer clic se llama a la función prevSlide(0) -->
+          <div class="arrow right" onclick="nextSlide(4)">&#10095;</div>
+          <!-- Flecha derecha para el carrusel, al hacer clic se llama a la función prevSlide(0) -->
+        </div>
+        <div class="stars"> <!-- Contenedor para mostrar la calificación del producto mediante estrellas -->
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+        </div>
+        <div class="info-product"> <!-- Contenedor para la información del producto -->
+          <h2>CocaCola</h2> <!-- Nombre del producto 'CocaCola' -->
+          <p class="price">$17</p> <!-- Precio del producto -->
+          <button class="btn-add-cart">Añadir al carrito</button> <!-- Botón para añadir el producto al carrito -->
+        </div>
+      </div>
+      <div>
+        <h1 class="h" id="chips"></h1>
+      </div>
+      <div>
+        <h1 class="h" id="chips"></h1>
+      </div>
+      <h1 class="heading-1" id="chips">CHIPS</h1>
+      <div>
+        <h1 class="h" id="chips"></h1>
+      </div>
+      <div>
+        <h1 class="h" id="chips"></h1>
+      </div>
+
+      <div class="item">
+        <div class="carousel"> <!-- Carrusel de imágenes -->
+          <figure>
+            <img src="Imagenes/cheetosn.jpg" alt="producto" class="active" />
+            <!-- Imagen del producto (primera imagen) con clase "active" para mostrarla por defecto -->
+            <img src="Imagenes/dscheetos.png" alt="producto" /> <!-- Segunda imagen del producto "descripcion" -->
+          </figure>
+          <div class="arrow left" onclick="prevSlide(5)">&#10094;</div>
+          <!-- Flecha izquierda para el carrusel, al hacer clic se llama a la función prevSlide(0) -->
+          <div class="arrow right" onclick="nextSlide(5)">&#10095;</div>
+          <!-- Flecha derecha para el carrusel, al hacer clic se llama a la función prevSlide(0) -->
+        </div>
+        <div class="stars"> <!-- Contenedor para mostrar la calificación del producto mediante estrellas -->
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-regular fa-star" aria-hidden="true"></i>
+          <i class="fa-regular fa-star" aria-hidden="true"></i>
+        </div>
+        <div class="info-product"> <!-- Contenedor para la información del producto -->
+          <h2>Chetos</h2> <!-- Nombre del producto 'Chetos' -->
+          <p class="price">$17</p> <!-- Precio del producto -->
+          <button class="btn-add-cart">Añadir al carrito</button> <!-- Botón para añadir el producto al carrito -->
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="carousel"> <!-- Carrusel de imágenes -->
+          <figure>
+            <img src="Imagenes/dori.jpg" alt="producto" class="active" />
+            <!-- Imagen del producto (primera imagen) con clase "active" para mostrarla por defecto -->
+            <img src="Imagenes/dsdoritos.png" alt="producto" /> <!-- Segunda imagen del producto "descripcion" -->
+          </figure>
+          <div class="arrow left" onclick="prevSlide(6)">&#10094;</div>
+          <!-- Flecha izquierda para el carrusel, al hacer clic se llama a la función prevSlide(0) -->
+          <div class="arrow right" onclick="nextSlide(6)">&#10095;</div>
+          <!-- Flecha derecha para el carrusel, al hacer clic se llama a la función prevSlide(0) -->
+        </div>
+        <div class="stars"> <!-- Contenedor para mostrar la calificación del producto mediante estrellas -->
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+        </div>
+        <div class="info-product"> <!-- Contenedor para la información del producto -->
+          <h2>Doritos</h2> <!-- Nombre del producto 'Doritos' -->
+          <p class="price">$19</p> <!-- Precio del producto -->
+          <button class="btn-add-cart">Añadir al carrito</button> <!-- Botón para añadir el producto al carrito -->
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="carousel"> <!-- Carrusel de imágenes -->
+          <figure>
+            <img src="Imagenes/chip.jpg " alt="producto" class="active" />
+            <!-- Imagen del producto (primera imagen) con clase "active" para mostrarla por defecto -->
+            <img src="Imagenes/dschips.png" alt="producto" /> <!-- Segunda imagen del producto "descripcion" -->
+          </figure>
+          <div class="arrow left" onclick="prevSlide(7)">&#10094;</div>
+          <!-- Flecha izquierda para el carrusel, al hacer clic se llama a la función prevSlide(0) -->
+          <div class="arrow right" onclick="nextSlide(7)">&#10095;</div>
+          <!-- Flecha drecha para el carrusel, al hacer clic se llama a la función prevSlide(0) -->
+        </div>
+        <div class="stars"> <!-- Contenedor para mostrar la calificación del producto mediante estrellas -->
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+        </div>
+        <div class="info-product"> <!-- Contenedor para la información del producto -->
+
+          <h2>Chips</h2> <!-- Nombre del producto 'Chips' -->
+          <p class="price">$18</p> <!-- Preacio del producto -->
+          <button class="btn-add-cart">Añadir al carrito</button> <!-- Botón para añadir el producto al carrito -->
+        </div>
+      </div>
+      <div class="item">
+        <div class="carousel"> <!-- Carrusel de imágenes -->
+          <figure>
+            <img src="Imagenes/takis.png" alt="producto" class="active" />
+            <!-- Imagen del producto (primera imagen) con clase "active" para mostrarla por defecto -->
+            <img src="Imagenes/dstakis.png" alt="producto" /> <!-- Segunda imagen del producto "descripcion" -->
+          </figure>
+          <div class="arrow left" onclick="prevSlide(8)">&#10094;</div>
+          <!-- Flecha izquierda para el carrusel, al hacer clic se llama a la función prevSlide(0) -->
+          <div class="arrow right" onclick="nextSlide(8)">&#10095;</div>
+          <!-- Flecha derecha para el carrusel, al hacer clic se llama a la función prevSlide(0) -->
+        </div>
+        <div class="stars"> <!-- Contenedor para mostrar la calificación del producto mediante estrellas -->
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+        </div>
+        <div class="info-product"> <!-- Contenedor para la información del producto -->
+          <h2>Takis</h2> <!-- Nombre del producto 'Takis' -->
+          <p class="price">$19</p> <!-- Precio del producto -->
+          <button class="btn-add-cart">Añadir al carrito</button> <!-- Botón para añadir el producto al carrito -->
+        </div>
+      </div>
+      <div class="item">
+        <div class="carousel"> <!-- Carrusel de imágenes -->
+          <figure>
+            <img src="Imagenes/papass.jpg" alt="producto" class="active" />
+            <!-- Imagen del producto (primera imagen) con clase "active" para mostrarla por defecto -->
+            <img src="Imagenes/dssabritas.png" alt="producto" /> <!-- Segunda imagen del producto "descripcion" -->
+          </figure>
+          <div class="arrow left" onclick="prevSlide(9)">&#10094;</div>
+          <!-- Flecha izquierda para el carrusel, al hacer clic se llama a la función prevSlide(0) -->
+          <div class="arrow right" onclick="nextSlide(9)">&#10095;</div>
+          <!-- Flecha derecha para el carrusel, al hacer clic se llama a la función prevSlide(0) -->
+        </div>
+        <div class="stars"> <!-- Contenedor para mostrar la calificación del producto mediante estrellas -->
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-regular fa-star" aria-hidden="true"></i>
+        </div>
+        <div class="info-product"> <!-- Contenedor para la información del producto -->
+          <h2>Sabritas</h2> <!-- Nombre del producto 'Sabritas' -->
+          <p class="price">$20</p> <!-- Precio del producto -->
+          <button class="btn-add-cart">Añadir al carrito</button> <!-- Botón para añadir el producto al carrito -->
+        </div>
+      </div>
+
+      <div>
+        <h1 class="heading-1" id="chips"></h1>
+      </div>
+      <div>
+        <h1 class="heading-1" id="chips"></h1>
+      </div>
+      <h1 class="heading-1" id="chuches">CHUCHES</h1>
+      <div>
+        <h1 class="heading-1" id="chips"></h1>
+      </div>
+      <div>
+        <h1 class="heading-1" id="chips"></h1>
+      </div>
+
+      <div class="item">
+        <div class="carousel"> <!-- Carrusel de imágenes -->
+          <figure>
+            <img src="Imagenes/lucas.jpg" alt="producto" class="active" />
+            <!-- Imagen del producto (primera imagen) con clase "active" para mostrarla por defecto -->
+            <img src="Imagenes/dslucasmuecas.png" alt="producto" /> <!-- Segunda imagen del producto "descripcion" -->
+          </figure>
+          <div class="arrow left" onclick="prevSlide(10)">&#10094;</div>
+          <!-- Flecha izquierda para el carrusel, al hacer clic se llama a la función prevSlide(0) -->
+          <div class="arrow right" onclick="nextSlide(10)">&#10095;</div>
+          <!-- Flecha derecha para el carrusel, al hacer clic se llama a la función prevSlide(0) -->
+        </div>
+        <div class="stars"> <!-- Contenedor para mostrar la calificación del producto mediante estrellas -->
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+        </div>
+        <div class="info-product"> <!-- Contenedor para la información del producto -->
+          <h2>Lucas Muecas</h2> <!-- Nombre del producto 'Lucas Muecas' -->
+          <p class="price">$8</p> <!-- Precio del producto -->
+          <button class="btn-add-cart">Añadir al carrito</button> <!-- Botón para añadir el producto al carrito -->
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="carousel"> <!-- Carrusel de imágenes -->
+          <figure>
+            <img src="Imagenes/lucasp.jpg" alt="producto" class="active" />
+            <!-- Imagen del producto (primera imagen) con clase "active" para mostrarla por defecto -->
+            <img src="Imagenes/dslucaspanzon.png" alt="producto" /> <!-- Segunda imagen del producto "descripcion" -->
+          </figure>
+          <div class="arrow left" onclick="prevSlide(11)">&#10094;</div>
+          <!-- Flecha izquierda para el carrusel, al hacer clic se llama a la función prevSlide(0) -->
+          <div class="arrow right" onclick="nextSlide(11)">&#10095;</div>
+          <!-- Flecha derecha para el carrusel, al hacer clic se llama a la función prevSlide(0) -->
+        </div>
+        <div class="stars"> <!-- Contenedor para mostrar la calificación del producto mediante estrellas -->
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-regular fa-star" aria-hidden="true"></i>
+          <i class="fa-regular fa-star" aria-hidden="true"></i>
+        </div>
+        <div class="info-product"> <!-- Contenedor para la información del producto -->
+          <h2>Lucas Panzon</h2> <!-- Nombre del producto 'Lucas Muecas' -->
+          <p class="price">$12</p> <!-- Precio del producto -->
+          <button class="btn-add-cart">Añadir al carrito</button> <!-- Botón para añadir el producto al carrito -->
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="carousel"> <!-- Carrusel de imágenes -->
+          <figure>
+            <img src="Imagenes/kitkat.jpg" alt="producto" class="active" />
+            <!-- Imagen del producto (primera imagen) con clase "active" para mostrarla por defecto -->
+            <img src="Imagenes/dschocolatekitkat.png" alt="producto" />
+            <!-- Segunda imagen del producto "descripcion" -->
+          </figure>
+          <div class="arrow left" onclick="prevSlide(12)">&#10094;</div>
+          <!-- Flecha izquierda para el carrusel, al hacer clic se llama a la función prevSlide(0) -->
+          <div class="arrow right" onclick="nextSlide(12)">&#10095;</div>
+          <!-- Flecha derecha para el carrusel, al hacer clic se llama a la función prevSlide(0) -->
+        </div>
+        <div class="stars"> <!-- Contenedor para mostrar la calificación del producto mediante estrellas -->
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+        </div><br><br>
+
+        <div class="info-product"> <!-- Contenedor para la información del producto -->
+          <h2>Kitkat Nestle</h2> <!-- Nombre del producto 'Kitkat' -->
+          <p class="price">$14</p> <!-- Precio del producto -->
+
+          <button class="btn-add-cart">Añadir al carrito</button> <!-- Botón para añadir el producto al carrito -->
+        </div>
+      </div>
+      <div class="item">
+        <div class="carousel"> <!-- Carrusel de imágenes -->
+          <figure>
+            <img src="Imagenes/mm.jpg" alt="producto" class="active" />
+            <!-- Imagen del producto (primera imagen) con clase "active" para mostrarla por defecto -->
+            <img src="Imagenes/dsmym.png" alt="producto" /> <!-- Segunda imagen del producto "descripcion" -->
+          </figure>
+          <div class="arrow left" onclick="prevSlide(13)">&#10094;</div>
+          <!-- Flecha izquierda para el carrusel, al hacer clic se llama a la función prevSlide(0) -->
+          <div class="arrow right" onclick="nextSlide(13)">&#10095;</div>
+          <!-- Flecha derecha para el carrusel, al hacer clic se llama a la función prevSlide(0) -->
+        </div>
+        <div class="stars"> <!-- Contenedor para mostrar la calificación del producto mediante estrellas -->
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+        </div>
+        <div class="info-product"> <!-- Contenedor para la información del producto -->
+          <h2>
+            M&M´s Cacahuate
+          </h2> <!-- Nombre del producto 'M&M´s Cacahuate' -->
+          <p class="price">$22</p> <!-- Precio del producto -->
+          <button class="btn-add-cart">Añadir al carrito</button> <!-- Botón para añadir el producto al carrito -->
+        </div>
+      </div>
+      <div class="item">
+        <div class="carousel"> <!-- Carrusel de imágenes -->
+          <figure>
+            <img src="Imagenes/buba.jpg" alt="producto" class="active" />
+            <!-- Imagen del producto (primera imagen) con clase "active" para mostrarla por defecto -->
+            <img src="Imagenes/dsbubbalo.png" alt="producto" /> <!-- Segunda imagen del producto "descripcion" -->
+          </figure>
+          <div class="arrow left" onclick="prevSlide(14)">&#10094;</div>
+          <!-- Flecha izquierda para el carrusel, al hacer clic se llama a la función prevSlide(0) -->
+          <div class="arrow right" onclick="nextSlide(14)">&#10095;</div>
+          <!-- Flecha derecha para el carrusel, al hacer clic se llama a la función prevSlide(0) -->
+        </div>
+        <div class="stars"> <!-- Contenedor para mostrar la calificación del producto mediante estrellas -->
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-regular fa-star" aria-hidden="true"></i>
+          <i class="fa-regular fa-star" aria-hidden="true"></i>
+        </div>
+        <div class="info-product"> <!-- Contenedor para la información del producto -->
+          <h2>Bubbalo rollo </h2><br> <!-- Nombre del producto 'Bubbalo rollo' -->
+          <p class="price">$28</p> <!-- Preacio del producto -->
+
+          <button class="btn-add-cart">Añadir al carrito</button> <!-- Botón para añadir el producto al carrito -->
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <!-- End of Top Container -->
+    <script src="funciones.js"></script>
+
+
+</body>
+<footer class="footer" id="mas"> <!-- Footer de la página con clase "footer" y identificador "mas" -->
+  <div class="container container-footer"> <!-- Contenedor principal del footer con clase "container-footer" -->
+    <div class="menu-footer"> <!-- Menú del footer -->
+      <div class="contact-info"> <!-- Información de contacto -->
+        <p class="title-footer">Información de Contacto</p>
+        <ul>
+          <li> Dirección:Av. Adolfo López Mateos #1801 Ote. Fracc. Bona Gens, C.P. 20255 Aguascalientes, Ags., México
+          </li>
+
+        </ul>
+        <div class="social-icons">
+          <!-- Íconos de redes sociales -->
+          <span class="facebook">
+            <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+          </span>
+          <span class="twitter">
+            <a href="https://www.twitter.com"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
+          </span>
+          <span class="youtube">
+            <a href="https://www.youtube.com"> <i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+          </span>
+          <span class="pinterest">
+            <a href="https://www.pinterest.com"><i class="fa-brands fa-pinterest-p" aria-hidden="true"></i></a>
+          </span>
+          <span class="instagram">
+            <a href="https://www.instagram.com"> <i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+          </span>
+        </div>
+      </div>
+      <div class="information"> <!-- Información de contacto -->
+        <p class="title-footer">Telefonos</p>
+        <ul>
+          <li>4494536159</li>
+          <li>4492577808</li>
+        </ul>
+      </div>
+      <div class="my-account">
+        <p class="title-footer">Contactanos</p>
+        <ul>
+          <li>Correo Electronico: tiendita1234@gmail.com</li>
+        </ul>
+      </div>
+      <div class="newsletter">
+        <!-- Mensaje del boletín -->
+        <p>"Disfruta con la crujiente variedad de nuestras papas y el refrescante sabor de nuestros productos.
+          ¡Descubre tu nuevo bocado favorito en nuestra tienda!" </p>
+
+      </div>
+    </div>
+
+    <div class="copyright">
+      
+      <p>&copy; Desarrollado por Daniela Reyes y Dulce Marina; 2024 </p>
+      <img src="Imagenes/payment.png" alt="Pagos">
+    </div>
+  </div>
+
+</footer>
+
+<script src="https://kit.fontawesome.com/81581fb069.js" crossorigin="anonymous"></script>
 
 </html>
